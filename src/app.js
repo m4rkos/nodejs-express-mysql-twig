@@ -1,4 +1,3 @@
-const { json } = require('express');
 const express = require('express');
 const {twig} = require( 'twig' );
 
@@ -15,7 +14,7 @@ app.set("twig options", {
 });
 
 app.set('views', './src/views');
-app.use(json());
+app.use(express.json());
 app.use(express.static('./src/public'));
 
 console.log(os.hostname());

@@ -1,10 +1,7 @@
 // Routes
 module.exports = (app) =>{
     // home
-    app.get('/', (req, res) => {        
-        // res.render('pages/index', {
-        //     message : "Hello World"
-        // });
+    app.get('/', (req, res) => {                
         app.src.controllers.page.home(app, req, res);
     })
     // about

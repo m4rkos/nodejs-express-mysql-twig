@@ -4,8 +4,24 @@
     <div class="jumbotron text-center">
         Página Inicial
     </div>
-
+    
     {% for el in data %}
-        <p>{{ el.title }}</p>
+        <div class="col-md-4">
+            <img class="image" src="{{el.image}}">
+            <p>{{ el.title }}</p> 
+        </div>       
     {% endfor %}
+
+{% endblock %}
+
+{% block style %}
+    <style>
+        .image{
+            width: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block script %}
+    <script src="script/tools.js" />
 {% endblock %}

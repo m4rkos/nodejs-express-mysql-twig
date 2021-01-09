@@ -19,10 +19,9 @@ module.exports.about = (app, req, res) =>{
         email: faker.internet.email(),
         avatar: 'http://placebear.com/500/300'
     }]
-
-    
     
     res.render('pages/about', {
+        title: 'About',
         usuarios: users
     })
 }
@@ -38,6 +37,7 @@ module.exports.home = (app, req, res) =>{
 
     apiModel.getAllTables({ id }, (error, result) => {        
         res.render('pages/home', {
+            title: 'Home page',
             data: result
         });
     });
@@ -47,7 +47,9 @@ module.exports.home = (app, req, res) =>{
 
 module.exports.contact = (app, req, res) =>{
     
-    res.render('pages/contact')
+    res.render('pages/contact', {
+        title:  'Contact',
+    })
 }
 module.exports.contact_post = (app, req, res) =>{
 
