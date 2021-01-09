@@ -1,0 +1,21 @@
+NODE_ENV=development
+PORT=3040
+# Set your database/API connection information here
+API_KEY=**************************
+API_URL=**************************
+
+# Database
+HOST=webhost
+USERDB=user
+PASSWORD="****"
+DATABASE=database
+PORTDB=3306
+
+# Database Dev
+LOCAL_HOST=localhost
+LOCAL_USER=user
+LOCAL_PASSWORD='****'
+LOCAL_DATABASE=database
+
+ENV_DEV1='aaaaaaa'
+ENV_DEV2='bbbbbbb'

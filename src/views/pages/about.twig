@@ -1,0 +1,21 @@
+{% extends "../layout.twig" %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1>O Time!</h1>
+    <div class="row">
+        {% for usuario in usuarios %}
+
+            <div class="col-sm-4">
+                <h2>{{ usuario.name }}</h2>
+                <img class="img-responsive" style="height: 250px" src="{{ usuario.avatar }}">
+                <span>{{ usuario.email }}</span>
+            </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
